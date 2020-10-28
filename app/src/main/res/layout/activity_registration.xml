@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegistrationActivity">
+
+        <Button
+            android:id="@+id/bRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="64dp"
+            android:text="register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Username"
+            app:layout_constraintBottom_toTopOf="@id/etPassword"
+            app:layout_constraintEnd_toEndOf="@id/bRegister"
+            app:layout_constraintStart_toStartOf="@id/bRegister" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@id/etConfirmPassword"
+            app:layout_constraintEnd_toEndOf="@id/bRegister"
+            app:layout_constraintStart_toStartOf="@id/bRegister" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="confirm password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@id/bRegister"
+            app:layout_constraintEnd_toEndOf="@id/bRegister"
+            app:layout_constraintStart_toStartOf="@id/bRegister" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
